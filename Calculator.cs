@@ -90,7 +90,8 @@ namespace Calculator
                 if (currentValue == 0)
                 {
                     Display = "Error";
-                    ClearAll();
+                    currentOperator = Operator.None;
+                    isNewEntry = true;
                     return;
                 }
                 result = storedValue / currentValue;
